@@ -1,4 +1,4 @@
-# bluez-el7
+# bluez-5.49-3.el7.x86_64
 
 This is a [RPM-release]([url](https://github.com/vdepagter/bluez-el7/releases)) for [bluez]([url](http://www.bluez.org))-5.49-3 built for CentOS 7.
 It was required for getting Bluetooth integration working in combination with Home Assistant on CentOS 7. See [Github issue]([url](https://github.com/home-assistant/core/issues/76234)).
