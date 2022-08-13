@@ -13,6 +13,28 @@ Special thanks: https://budimir.cc/2022/01/08/compile-bluez-from-source/ and man
 
 Install with: ``rpm -ivh https://github.com/vdepagter/bluez-el7/releases/download/v5.49-3.el7/bluez-5.49-3.el7.x86_64.rpm``, add ``--nodeps`` if necessary.
 
+It may also be worth giving bluez latest/stable snap a try. 20/stable didn't work for me.
+```
+[root@centos ~]# snap info bluez
+name:      bluez
+summary:   Bluetooth tools and daemons
+publisher: Canonical✓
+store-url: https://snapcraft.io/bluez
+contact:   https://code.launchpad.net/~snappy-hwe-team/snappy-hwe-snaps/+git/bluez
+license:   GPL-2.0
+description: |
+  This package contains tools and system daemons for using Bluetooth
+  devices. BlueZ is the official Linux Bluetooth protocol stack. It
+  is an Open Source project distributed under GNU General Public
+  License (GPL). See the project homepage for more details:
+  https://code.launchpad.net/~snappy-hwe-team/snappy-hwe-snaps/+git/bluez
+snap-id: JmzJi9kQvHUWddZ32PDJpBRXUpGRxvNS
+channels:
+  20/stable:        5.53-7     2022-06-28 (334) 5MB -
+  latest/stable:    **5.48-4**     2022-02-28 (314) 4MB -
+  22/stable:        5.64-2     2022-05-03 (331) 4MB -
+```
+
 Below is a dump of most commands from my build attempt adventures, if you would like to try to rebuild it yourself.
 You may also need sections for dependencies. Please let me know so I can update the instruction.
 Executed from ``sudo su -``, you can also add ``sudo`` before the commands where needed.
