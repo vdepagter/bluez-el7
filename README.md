@@ -1,8 +1,14 @@
 # bluez-el7
 
-This is a RPM-[release]([url](https://github.com/vdepagter/bluez-el7/releases)) for [bluez]([url](http://www.bluez.org/))-5.49-3 built for CentOS 7.
+This is a [RPM-release]([url](https://github.com/vdepagter/bluez-el7/releases)) for [bluez]([url](http://www.bluez.org))-5.49-3 built for CentOS 7.
+It was required for getting Bluetooth integration working in combination with Home Assistant on CentOS 7. See [Github issue]([url](https://github.com/home-assistant/core/issues/76234)).
 There may be some dependencies that need resolving, I will update instructions here as we discover them.
 I took the source RPM from [Fedora Project]([url](https://koji.fedoraproject.org/koji/buildinfo?buildID=1074145)).
+
+Github issue: https://github.com/home-assistant/core/issues/76234
+BlueZ: http://www.bluez.org
+RPM-release: https://github.com/vdepagter/bluez-el7/releases
+Fedora Project build page for bluez-5.49-3.fc27: https://koji.fedoraproject.org/koji/buildinfo?buildID=1074145
 
 Install with: ``rpm -ivh https://github.com/vdepagter/bluez-el7/releases/download/v5.49-3.el7/bluez-5.49-3.el7.x86_64.rpm``, add ``--nodeps`` if necessary.
 
@@ -53,7 +59,8 @@ cd readline-7.0
 ./configure && make && make install
 ```
 
-Building a recent release from source (skip--this didn't work out)
+Building a recent release from source
+Skip this, it didn't work, although you may want to try adjusting for building the same version source instead of from fc27 SRCRPM
 ```
 cd /usr/local/src
 wget https://mirrors.edge.kernel.org/pub/linux/bluetooth/bluez-5.63.tar.xz
