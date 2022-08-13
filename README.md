@@ -9,6 +9,7 @@ Github issue: https://github.com/home-assistant/core/issues/76234
 BlueZ: http://www.bluez.org
 RPM-release: https://github.com/vdepagter/bluez-el7/releases
 Fedora Project build page for bluez-5.49-3.fc27: https://koji.fedoraproject.org/koji/buildinfo?buildID=1074145
+Special thanks: https://budimir.cc/2022/01/08/compile-bluez-from-source/ and many others
 
 Install with: ``rpm -ivh https://github.com/vdepagter/bluez-el7/releases/download/v5.49-3.el7/bluez-5.49-3.el7.x86_64.rpm``, add ``--nodeps`` if necessary.
 
